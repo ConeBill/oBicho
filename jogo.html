@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Jogo de Bicho Virtual</title>
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+</head>
+
+<body id="body">
+    <div id="notificacao" class="esconde"></div>
+
+    <h1 class="cabecalho">Cone Bill + MegaBitte</h1>
+
+    <div>
+        <p id="numeroNivel">0</p>
+    </div>
+
+    <div class="progress">
+        <progress id="nivel" value="100" max="100"></progress>
+    </div>
+
+    <div id="fundo">
+        <img id="dino" class="dino-animation" src="images/art.gif" />
+    </div>
+
+    <div id="barras" class="progress">
+        <div>
+            <label>Vida:</label>
+            <progress id="vida" value="100" max="100"></progress>
+        </div>
+        <div>
+            <label>Energia:</label>
+            <progress id="energia" value="100" max="100"></progress>
+        </div>
+        <div>
+            <label>Felicidade:</label>
+            <progress id="felicidade" value="100" max="100"></progress>
+        </div>
+        <div>
+            <label>Fome:</label>
+            <progress id="fome" value="100" max="100"></progress>
+        </div>
+    </div>
+
+    <div id="botoes">
+        <button id="alimentar">Alimentar</button>
+        <button id="dormir">Dormir</button>
+        <button id="brincar">Brincar</button>
+    </div>
+
+    <div id="listaOpcoes">
+        <ul id="listaComidas">
+            <button class="botaoComida" id="bolacha">
+                <li class="botaolista">Bolacha</li>
+            </button>
+            <button class="botaoComida esconde" id="kibe">
+                <li class="botaolista">Kibe</li>
+            </button>
+            <button class="botaoComida esconde" id="melao">
+                <li class="botaolista">Melão</li>
+            </button>
+            <button class="botaoComida esconde" id="alface">
+                <li class="botaolista">Alface</li>
+            </button>
+            <button class="botaoComida esconde" id="bife">
+                <li class="botaolista">Bife</li>
+            </button>
+        </ul>
+    </div>
+
+    <div id="rodape">
+        <h6>Node V </h6><span id="node-version"></span>,
+        <h6>Chrome V </h6><span id="chrome-version"></span>,
+        <h6>Electron V </h6><span id="electron-version"></span>.
+
+        <button id="returnHome">Voltar ao início</button>
+
+        <script src="render.js"></script>
+        <script src="routes.js"></script>
+    </div>
+</body>
+
+
+</html>
