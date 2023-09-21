@@ -1,0 +1,81 @@
+#body {
+    height: 100vw;
+    width: 100vw;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#cabecalho {
+    display: inline-block;
+}
+
+#numeroNivel {
+    margin: 0px;
+}
+
+#fundo {
+    width: 100vw;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    overflow: hidden;
+}
+
+#alimentar {
+    margin-bottom: 2px;
+}
+
+#listaOpcoes {
+    display: none;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: groove;
+    width: 110px;
+}
+
+#listaComidas {
+    list-style: none;
+    padding: 0;
+    width: 100px;
+}
+
+.botaoLista {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.botaoComida {
+    width: 100%;
+}
+
+#bife {
+    margin-bottom: 2px;
+}
+
+#dino {
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 200px;
+}
+
+.dino-animation {
+    flex-flow: row;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    animation: go-back linear 6s infinite alternate;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(-3vw);
+    }
+
+    100% {
+        transform: translateX(90vw);
+    }
+}
