@@ -6,16 +6,22 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Jogo de Bicho Virtual</title>
     <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/notificacao.css">
 </head>
 
 <body id="body">
-    <div id="notificacao" class="esconde"></div>
+    <div id="notificacao-container" class="notificacao-container esconde">
+        <div id="notificacao" class="notification active">
+          <span class="close-button">×</span>
+        </div>
+      </div>
 
     <h1 class="cabecalho">Cone Bill + MegaBitte</h1>
 
-    <div>
-        <p id="numeroNivel">0</p>
-    </div>
+    <div id="numeroNivel">
+        0
+    </div>.com
+    
 
     <div class="progress">
         <progress id="nivel" value="100" max="100"></progress>
@@ -52,20 +58,11 @@
 
     <div id="listaOpcoes">
         <ul id="listaComidas">
+            <button class="botaoComida" id="bife">
+                <li class="botaolista">Bife</li>
+            </button>
             <button class="botaoComida" id="bolacha">
                 <li class="botaolista">Bolacha</li>
-            </button>
-            <button class="botaoComida esconde" id="kibe">
-                <li class="botaolista">Kibe</li>
-            </button>
-            <button class="botaoComida esconde" id="melao">
-                <li class="botaolista">Melão</li>
-            </button>
-            <button class="botaoComida esconde" id="alface">
-                <li class="botaolista">Alface</li>
-            </button>
-            <button class="botaoComida esconde" id="bife">
-                <li class="botaolista">Bife</li>
             </button>
         </ul>
     </div>
@@ -80,7 +77,10 @@
         <script src="render.js"></script>
         <script src="routes.js"></script>
     </div>
-</body>
+    <script>
+        
 
+    </script>
+</body>
 
 </html>

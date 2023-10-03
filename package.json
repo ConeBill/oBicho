@@ -1,0 +1,16 @@
+{
+  "name": "jbicho",
+  "version": "0.0.3",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^26.2.1",
+    "toastify-js": "^1.12.0"
+  }
+}
